@@ -1,0 +1,244 @@
+.topMenu {
+	background-image: url("header-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+ul {
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+	list-style-type: none;
+	width: 30vw;
+	height: 40px;
+	color: white;
+	cursor: pointer;
+}
+ul li:hover {
+	color: rgb(179, 179, 28);
+	text-transform: uppercase;
+}
+
+nav {
+	justify-content: space-around;
+	align-items: center;
+	display: flex;
+}
+nav h2 {
+	color: yellow;
+	font-family: cursive;
+}
+
+.centerWords {
+	color: white;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 40vh;
+}
+
+.centerWords h1 {
+	font-size: 50px;
+	margin-top: 10vh;
+}
+
+.centerWords h3 {
+	font-size: 30px;
+	margin-top: 10vh;
+}
+
+.menuBtn {
+	width: 160px;
+	height: 40px;
+	border-radius: 5px;
+	background: rgb(179, 179, 28);
+	color: white;
+	outline: none;
+	cursor: pointer;
+}
+
+.menuBtn:hover {
+	background: white;
+	color: rgb(179, 179, 28);
+}
+
+img {
+	display: none;
+}
+
+/* -------------Second Page------------ */
+.services {
+	color: black;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 20vh;
+}
+.threeLogos {
+	justify-content: space-around;
+	align-items: center;
+	display: flex;
+	margin-top: 20px;
+}
+
+.cartLogo {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	width: 100px;
+	height: 100px;
+}
+
+.e-commerce {
+	width: 15vw;
+	margin-top: 60px;
+	flex-wrap: wrap;
+}
+.responsive-design {
+	width: 15vw;
+	margin-top: 60px;
+	flex-wrap: wrap;
+}
+
+.webSecurity {
+	width: 15vw;
+	margin-top: 60px;
+	flex-wrap: wrap;
+}
+
+.portfolio {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	margin-top: 20vh;
+	background: rgb(207, 199, 199);
+}
+
+.boxImage {
+}
+
+@media (max-width: 900px) {
+	.centerWords {
+		color: white;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		margin-top: 30vh;
+	}
+
+	.centerWords h1 {
+		font-size: 20px;
+	}
+
+	.centerWords h3 {
+		font-size: 30px;
+	}
+
+	ul {
+		display: none;
+	}
+
+	img {
+		display: block;
+		width: 60px;
+		height: 60px;
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 900px) {
+	.cartLogo {
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		width: 100px;
+		height: 100px;
+	}
+
+	.e-commerce {
+		width: 40vw;
+		margin-top: 60px;
+		flex-wrap: wrap;
+	}
+	.responsive-design {
+		width: 40vw;
+		margin-top: 60px;
+		flex-wrap: wrap;
+	}
+
+	.webSecurity {
+		width: 40vw;
+		margin-top: 60px;
+		flex-wrap: wrap;
+	}
+}
+
+.menu {
+	width: 70vw;
+	height: 91vh;
+	position: absolute;
+	top: 9vh;
+	left: 0px;
+	background: rgb(212, 208, 208);
+	display: none;
+}
+
+@media (max-width: 900px) {
+	img {
+		display: block;
+		width: 50px;
+		height: 50px;
+	}
+	ul {
+		display: none;
+	}
+	.menu-open {
+		width: 35vw;
+		height: 91vh;
+		position: absolute;
+		top: 9vh;
+		right: 0px;
+		background: rgb(212, 208, 208);
+		animation: openMenu 1s;
+	}
+	.menu-closed {
+		animation: closeMenu 1s;
+		width: 35vw;
+		height: 91vh;
+		position: absolute;
+		top: 9vh;
+		right: 0px;
+		background: rgb(212, 208, 208);
+		animation-fill-mode: forwards;
+	}
+}
+
+@keyframes openMenu {
+	from {
+		width: 0vw;
+	}
+	to {
+		width: 35vw;
+	}
+}
+
+@keyframes closeMenu {
+	from {
+		width: 35vw;
+	}
+	to {
+		width: 0vw;
+	}
+}
+
+.smallMenu {
+	display: none;
+}
+
+@media (max-width: 900px) and (max-width: 920px) {
+	.smallMenu {
+		display: block;
+	}
+}
